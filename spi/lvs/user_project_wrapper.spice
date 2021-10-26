@@ -1,104 +1,8 @@
 * NGSPICE file created from user_project_wrapper.ext - technology: sky130A
 
-* Black-box entry subcircuit for sky130_fd_sc_hd__fill_1 abstract view
-.subckt sky130_fd_sc_hd__fill_1 VGND VNB VPB VPWR
-.ends
-
-* Black-box entry subcircuit for sky130_fd_sc_hd__decap_6 abstract view
-.subckt sky130_fd_sc_hd__decap_6 VGND VNB VPB VPWR
-.ends
-
-* Black-box entry subcircuit for sky130_fd_sc_hd__decap_12 abstract view
-.subckt sky130_fd_sc_hd__decap_12 VGND VNB VPB VPWR
-.ends
-
-* Black-box entry subcircuit for sky130_fd_sc_hd__tapvpwrvgnd_1 abstract view
-.subckt sky130_fd_sc_hd__tapvpwrvgnd_1 VGND VPWR
-.ends
-
-* Black-box entry subcircuit for sky130_fd_sc_hd__decap_4 abstract view
-.subckt sky130_fd_sc_hd__decap_4 VGND VNB VPB VPWR
-.ends
-
-* Black-box entry subcircuit for sky130_fd_sc_hd__decap_3 abstract view
-.subckt sky130_fd_sc_hd__decap_3 VGND VNB VPB VPWR
-.ends
-
-* Black-box entry subcircuit for sky130_fd_sc_hd__decap_8 abstract view
-.subckt sky130_fd_sc_hd__decap_8 VGND VNB VPB VPWR
-.ends
-
-* Black-box entry subcircuit for sky130_fd_sc_hd__diode_2 abstract view
-.subckt sky130_fd_sc_hd__diode_2 DIODE VGND VNB VPB VPWR
-.ends
-
-* Black-box entry subcircuit for sky130_fd_sc_hd__clkbuf_2 abstract view
-.subckt sky130_fd_sc_hd__clkbuf_2 A VGND VNB VPB VPWR X
-.ends
-
-* Black-box entry subcircuit for sky130_fd_sc_hd__dlxtp_1 abstract view
-.subckt sky130_fd_sc_hd__dlxtp_1 D GATE VGND VNB VPB VPWR Q
-.ends
-
-* Black-box entry subcircuit for sky130_fd_sc_hd__fill_2 abstract view
-.subckt sky130_fd_sc_hd__fill_2 VGND VNB VPB VPWR
-.ends
-
-* Black-box entry subcircuit for sky130_fd_sc_hd__inv_2 abstract view
-.subckt sky130_fd_sc_hd__inv_2 A VGND VNB VPB VPWR Y
-.ends
-
-* Black-box entry subcircuit for sky130_fd_sc_hd__a41o_4 abstract view
-.subckt sky130_fd_sc_hd__a41o_4 A1 A2 A3 A4 B1 VGND VNB VPB VPWR X
-.ends
-
-* Black-box entry subcircuit for sky130_fd_sc_hd__and4_1 abstract view
-.subckt sky130_fd_sc_hd__and4_1 A B C D VGND VNB VPB VPWR X
-.ends
-
-* Black-box entry subcircuit for sky130_fd_sc_hd__nor2_1 abstract view
-.subckt sky130_fd_sc_hd__nor2_1 A B VGND VNB VPB VPWR Y
-.ends
-
-* Black-box entry subcircuit for sky130_fd_sc_hd__a311o_1 abstract view
-.subckt sky130_fd_sc_hd__a311o_1 A1 A2 A3 B1 C1 VGND VNB VPB VPWR X
-.ends
-
-* Black-box entry subcircuit for sky130_fd_sc_hd__or2_1 abstract view
-.subckt sky130_fd_sc_hd__or2_1 A B VGND VNB VPB VPWR X
-.ends
-
-* Black-box entry subcircuit for sky130_fd_sc_hd__clkbuf_4 abstract view
-.subckt sky130_fd_sc_hd__clkbuf_4 A VGND VNB VPB VPWR X
-.ends
-
-* Black-box entry subcircuit for sky130_fd_sc_hd__buf_2 abstract view
-.subckt sky130_fd_sc_hd__buf_2 A VGND VNB VPB VPWR X
-.ends
-
-* Black-box entry subcircuit for sky130_fd_sc_hd__buf_1 abstract view
-.subckt sky130_fd_sc_hd__buf_1 A VGND VNB VPB VPWR X
-.ends
-
-* Black-box entry subcircuit for sky130_fd_sc_hd__buf_4 abstract view
-.subckt sky130_fd_sc_hd__buf_4 A VGND VNB VPB VPWR X
-.ends
-
-* Black-box entry subcircuit for sky130_fd_sc_hd__o221ai_4 abstract view
-.subckt sky130_fd_sc_hd__o221ai_4 A1 A2 B1 B2 C1 VGND VNB VPB VPWR Y
-.ends
-
-* Black-box entry subcircuit for sky130_fd_sc_hd__a21oi_1 abstract view
-.subckt sky130_fd_sc_hd__a21oi_1 A1 A2 B1 VGND VNB VPB VPWR Y
-.ends
-
-* Black-box entry subcircuit for sky130_fd_sc_hd__or4_1 abstract view
-.subckt sky130_fd_sc_hd__or4_1 A B C D VGND VNB VPB VPWR X
-.ends
-
 * Black-box entry subcircuit for user_proj_example abstract view
-.subckt user_proj_example io_en io_in[0] io_in[1] io_in[2] io_in[3] io_in[4] io_in[5]
-+ io_in[6] io_in[7] io_out[0] io_out[1] io_out[2] vccd1 vssd1 wb_eno wb_gs
+.subckt user_proj_example eno gs io_en io_in[0] io_in[1] io_in[2] io_in[3] io_in[4]
++ io_in[5] io_in[6] io_in[7] io_out[0] io_out[1] io_out[2] vccd1 vssd1
 .ends
 
 .subckt user_project_wrapper analog_io[0] analog_io[10] analog_io[11] analog_io[12]
@@ -202,8 +106,8 @@
 + wbs_dat_o[29] wbs_dat_o[2] wbs_dat_o[30] wbs_dat_o[31] wbs_dat_o[3] wbs_dat_o[4]
 + wbs_dat_o[5] wbs_dat_o[6] wbs_dat_o[7] wbs_dat_o[8] wbs_dat_o[9] wbs_sel_i[0] wbs_sel_i[1]
 + wbs_sel_i[2] wbs_sel_i[3] wbs_stb_i wbs_we_i
-Xmprj wbs_sel_i[0] wbs_dat_i[0] wbs_dat_i[1] wbs_dat_i[2] wbs_dat_i[3] wbs_dat_i[4]
-+ wbs_dat_i[5] wbs_dat_i[6] wbs_dat_i[7] wbs_dat_o[0] wbs_dat_o[1] wbs_dat_o[2] vssd2
-+ vssd1 io_out[0] io_oeb[0] user_proj_example
+Xmprj wbs_dat_o[8] wbs_dat_o[9] wbs_sel_i[0] wbs_dat_i[0] wbs_dat_i[1] wbs_dat_i[2]
++ wbs_dat_i[3] wbs_dat_i[4] wbs_dat_i[5] wbs_dat_i[6] wbs_dat_i[7] wbs_dat_o[0] wbs_dat_o[1]
++ wbs_dat_o[2] vssd2 vssd1 user_proj_example
 .ends
 

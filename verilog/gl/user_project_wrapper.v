@@ -53,13 +53,12 @@ module user_project_wrapper (user_clock2,
  output [31:0] wbs_dat_o;
  input [3:0] wbs_sel_i;
 
- wire zero_;
 
- user_proj_example mprj (.io_en(wbs_sel_i[0]),
+ user_proj_example mprj (.eno(wbs_dat_o[8]),
+    .gs(wbs_dat_o[9]),
+    .io_en(wbs_sel_i[0]),
     .vccd1(vccd1),
     .vssd1(vssd1),
-    .wb_eno(io_out[0]),
-    .wb_gs(io_oeb[0]),
     .io_in({wbs_dat_i[7],
     wbs_dat_i[6],
     wbs_dat_i[5],
