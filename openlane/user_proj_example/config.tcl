@@ -13,6 +13,9 @@
 # limitations under the License.
 # SPDX-License-Identifier: Apache-2.0
 
+set ::env(PDK) "sky130A"
+set ::env(STD_CELL_LIBRARY) "sky130_fd_sc_hd"
+
 set script_dir [file dirname [file normalize [info script]]]
 
 set ::env(DESIGN_NAME) user_proj_example
@@ -23,10 +26,9 @@ set ::env(VERILOG_FILES) "\
 
 set ::env(DESIGN_IS_CORE) 0
 
-# turn off clock
-set ::env(CLOCK_TREE_SYNTH) 0
-set ::env(CLOCK_PORT) ""
-
+set ::env(CLOCK_PORT) "clk"
+set ::env(CLOCK_NET) " "
+set ::env(CLOCK_PERIOD) "10"
 
 set ::env(FP_SIZING) absolute
 set ::env(DIE_AREA) "0 0 900 600"
